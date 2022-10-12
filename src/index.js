@@ -71,7 +71,7 @@ const getData = async () => {
 
 const makeChart = async () => {
   const data = await getData();
-  console.log(data);
+  //console.log(data);
 
   const area = data.dimension.Alue.category.label;
   const value = data.value;
@@ -87,12 +87,7 @@ const makeChart = async () => {
     data: chartData,
     type: "line",
     height: 450,
-    colors: ["#eb5146"],
-
-    lineOptions: {
-      hideDots: 0,
-      regionFill: 0
-    }
+    colors: ["#eb5146"]
   });
 };
 makeChart();
