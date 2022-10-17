@@ -84,6 +84,7 @@ const makeChart = async () => {
   };
 
   const chart = new Chart("#chart", {
+    title:"Municipality",
     data: chartData,
     type: "line",
     height: 450,
